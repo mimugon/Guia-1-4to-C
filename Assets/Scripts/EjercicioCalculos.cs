@@ -7,30 +7,27 @@ public class EjercicioCalculos : MonoBehaviour
 
     public float num1;
     public float num2;
-    private float resultadoSuma;
-    private float resultadoResta;
-    private float resultadoDivision;
-    private float resultadoMult;
+    private float resultado;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        resultadoSuma = num1 + num2;
-        Debug.Log(resultadoSuma);
+        resultado = num1 + num2;
+        Debug.Log("El resultado de " + num1 + " + " + num2 + " es " + resultado);
 
-        resultadoResta = num1 - num2;
-        Debug.Log(resultadoResta);
+        resultado = num1 - num2;
+        Debug.Log("El resultado de " + num1 + " - " + num2 + " es " + resultado);
 
-        resultadoDivision = num1 / num2;
-        Debug.Log(resultadoDivision);
+        resultado = num1 * num2;
+        Debug.Log("El resultado de " + num1 + " por " + num2 + " es " + resultado);
 
-        resultadoMult = num1 * num2;
-        Debug.Log(resultadoMult);
+        resultado = num1 / num2;
+        Debug.Log("El resultado de " + num1 + " dividido " + num2 + " es " + resultado);
+
     }
-
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
     }
 }
